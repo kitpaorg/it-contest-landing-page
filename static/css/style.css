@@ -36,6 +36,14 @@ footer {
     padding: 0;
 }
 
+#group_ord li {
+    margin-bottom: 20px;
+}
+
+.codes {
+    font-size: 20px;
+}
+
 #landing_img img {
     width: 30vw;
 }

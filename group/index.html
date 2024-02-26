@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제2회 청소년 IT경시대회 단체접수 안내</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <meta name="description" content="제2회 청소년 IT경시대회 안내페이지">
+    <meta property="og:type" content="website"> 
+    <meta property="og:title" content="한국정보기술진흥원">
+    <meta property="og:description" content="제2회 청소년 IT경시대회 안내페이지">
+    <meta property="og:image" content="https://itc.kitpa.org/static/icon/kitpa_logo_new.png">
+    <meta property="og:url" content="https://itc.kitpa.org/">
+    <link rel="icon" href="../static/icon/icon_32x32.png" sizes="32x32">
+    <link rel="icon" href="../static/icon/icon_192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="../static/icon/icon_180x180.png">
+
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>제2회 청소년 IT경시대회 단체접수 안내</h1>
+        </header>
+        <main>
+            <ol id="group_ord">
+                <li>
+                    단체 접수 링크로 접속합니다.<br>
+                    <a href="https://kitpa.org/product/it-contest-2nd-group/">https://kitpa.org/product/it-contest-2nd-group/</a>
+                </li>
+                <li>
+                    양식을 올바르게 채워줍니다.<br>
+                    <strong>단체명과 담당자명</strong>은 이메일로 보내주신 엑셀에 적힌 내용을 그대로 적어주세요.<br>
+                    <strong>인증코드</strong>에는 <code class="codes">C456</code>를 작성해주세요.<br>
+                    <strong>지역</strong>은 단체가 속한 지역을 골라주세요.<br>
+                    <strong>수량</strong>은 접수를 진행할 학생의 수를 입력해주세요.<br><br>
+                    작성이 완료되었다면 장바구니 버튼을 눌러주세요.<br><br>
+                    <img src="../static/img/group_1.PNG" alt="단체접수 2단계" width="300px">
+                </li>
+                <li>
+                    장바구니 창으로 자동으로 이동되면, 쿠폰 입력 창이 있습니다.<br>
+                    해당 입력 창에 다시 <code class="codes">C456</code>를 입력하신 뒤 <strong>쿠폰 적용하기</strong> 버튼을 눌러주세요.<br>
+                    결제 금액이 10% 인하 가격으로 변경되었다면 결제를 진행하시면 됩니다.
+                </li>
+            </ol>
+        </main>
+    </div>
+    <script>
+        const urlParams = new URL(location.href).searchParams;
+        const codes = urlParams.get('codes');
+        const codesClass = document.getElementsByClassName("codes");
+        for(let i=0 ; i<codesClass.length ; i++) {
+            codesClass[i].innerHTML = codes;
+        }
+    </script>
+</body>
+</html>
